@@ -247,6 +247,12 @@ The parts in the variables' name have the following meanings sorted in alphabeti
 - **t**: time domain signal
 - **x, y, z**: three-axial signal in three directions
 
+The data set was saved by the following command:
+
+```
+write.table(tidy_data, "tidy_data.txt", row.names=TRUE)
+```
+
 Finally, in order to read in the data set, use the following command:
 ```
 data <- read.table("tidy_data.txt")
